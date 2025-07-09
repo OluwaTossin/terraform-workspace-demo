@@ -1,9 +1,11 @@
-module "ec2" {
-  source         = "../modules/ec2"
-  ami            = var.ami
-  instance_type  = var.instance_type
-}
+# modules/ec2/main.tf
+resource "aws_instance" "web" {
+  ami           = var.ami
+  instance_type = var.instance_type
 
-module "s3" {
-  source = "../modules/s3"
+  tags = {
+    Name = "${terraform.workspace}-ec2-instance"
+  }
+
+  user_data = file("${path.module}/user_data.tpl.sh")
 }
