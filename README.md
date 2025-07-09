@@ -123,3 +123,8 @@ A bootstrap script that attempts to render metadata files like workspace-info.tx
 ✅ Fully modular infrastructure
 
 ✅ Workspace context-driven deployment logic
+
+---
+
+🙋‍♂️ Need Help?
+If you're new to Terraform or not sure how this architecture scales to real production use cases, feel free to reach out. I’ll try to create time to walk you through it. Everyone starts somewhere, and clean patterns like this are worth mastering early.
