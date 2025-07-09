@@ -1,0 +1,35 @@
+# --- Terraform files ---
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+crash.log
+
+# --- Sensitive or environment-specific files ---
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*.pem
+
+# --- User-specific files ---
+*.log
+*.swp
+*.swo
+*.bak
+*.tmp
+*.DS_Store
+*.idea/
+.vscode/
+*.env
+.env.*
+
+# --- Optional workspace artifacts ---
+workspace-file.txt
+
+# --- OS-specific ---
+Thumbs.db
+.DS_Store
+
+# --- Bash history or credentials (if you ever include them) ---
+.aws/
